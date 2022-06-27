@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './components/bottomNavigator.dart';
-import './pages/searchPage.dart';
+import './components/searchAppBar.dart';
+import './pages/homePage.dart';
 
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ok music player',
+      title: 'jim music',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -40,26 +41,10 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        title: Text('音乐'),
-        actions: [
-          IconButton(
-              onPressed: (){
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (_) => SearchPage()));
-          }, icon: Icon(Icons.search)),
-        ],
-      ),
+      appBar: new SearchAppBar(),
       backgroundColor: Colors.black,
       bottomNavigationBar: new BottomNavigator(),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-          ],
-        ),
-      ),
+      body: new HomePage(),
     );
   }
 }

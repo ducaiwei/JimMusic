@@ -1,14 +1,36 @@
 import 'dart:io';
 import 'dart:convert';
+import '../model/musicModel.dart';
+import '../model/musicResponse.dart';
 
 class MusicHttp {
-    final String url = 'https://netease-music-6acxc0sy9-ducaiwei.vercel.app/';
-    var httpClient = new HttpClient();
+    static const String url = 'https://netease-music-6acxc0sy9-ducaiwei.vercel.app/';
+    static var httpClient = new HttpClient();
+    static Future<MusicResponse<MusicModel>> parseReponse(response) async {
+        if (response.statusCode == HttpStatus.OK) {
+            var json = await response.transform(utf8.decoder).join();
+            var data = jsonDecode(json) as MusicResponse<MusicModel>;
+            return data;
+        }
+        return new MusicResponse(false, response.statusCode, 0, []);
+    }
     /// 推荐歌单
-    _getpersonalized() async {
-        var request = await httpClient.getUrl(Uri.parse(url));
-        var response = await request.close();
-        print('=============', response);
+    static getPersonalized()  async {
+        const String path = url + 'personalized';
+        MusicResponse<MusicModel> res;
+        try {
+            print('==============');
+            var request = await httpClient.getUrl(Uri.parse(path));
+            print('++++++++++++++++');
+            var response = await request.close();
+            print('------------------');
+            res = await parseReponse(response);
+            print('res===============');
+            return res;
+        }catch(exception){
+            print('exception $exception');
+        }
+
     }
 }
 
