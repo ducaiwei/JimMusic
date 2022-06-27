@@ -1,4 +1,4 @@
-package com.example.okmusic
+package com.example.jimmusic
 
 import io.flutter.embedding.android.FlutterActivity
 

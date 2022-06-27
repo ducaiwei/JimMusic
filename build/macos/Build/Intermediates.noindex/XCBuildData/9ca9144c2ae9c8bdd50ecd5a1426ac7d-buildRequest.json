@@ -10,7 +10,7 @@
       "guid" : "18c1723432283e0cc55f10a6dcfd9e02a26d6e580d3222b86d62fb80ec380c14"
     }
   ],
-  "containerPath" : "/Users/nelson/Documents/dcw/flutter-project/okmusic/macos/Runner.xcworkspace",
+  "containerPath" : "/Users/nelson/Documents/dcw/flutter-project/jimmusic/macos/Runner.xcworkspace",
   "continueBuildingAfterErrors" : false,
   "enableIndexBuildArena" : false,
   "hideShellScriptEnvironment" : false,
@@ -29,21 +29,21 @@
       "targetArchitecture" : "x86_64"
     },
     "arenaInfo" : {
-      "buildIntermediatesPath" : "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Intermediates.noindex",
-      "buildProductsPath" : "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Products",
-      "derivedDataPath" : "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos",
-      "indexDataStoreFolderPath" : "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Index/DataStore",
+      "buildIntermediatesPath" : "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Products",
+      "derivedDataPath" : "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos",
+      "indexDataStoreFolderPath" : "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Index/DataStore",
       "indexEnableDataStore" : true,
-      "indexPCHPath" : "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Index/PrecompiledHeaders",
-      "pchPath" : "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Intermediates.noindex/PrecompiledHeaders"
+      "indexPCHPath" : "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Intermediates.noindex/PrecompiledHeaders"
     },
     "configurationName" : "Debug",
     "overrides" : {
       "commandLine" : {
         "table" : {
           "COMPILER_INDEX_STORE_ENABLE" : "NO",
-          "OBJROOT" : "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Intermediates.noindex",
-          "SYMROOT" : "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Products"
+          "OBJROOT" : "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Intermediates.noindex",
+          "SYMROOT" : "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Products"
         }
       },
       "synthesized" : {

@@ -1,4 +1,4 @@
-com.example.okmusic
+com.example.jimmusic
 attr activityAction
 attr activityName
 attr alpha

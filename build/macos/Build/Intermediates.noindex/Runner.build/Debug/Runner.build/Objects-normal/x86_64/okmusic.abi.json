@@ -8,14 +8,14 @@
       "name": "Cocoa",
       "printedName": "Cocoa",
       "declKind": "Import",
-      "moduleName": "okmusic"
+      "moduleName": "jimmusic"
     },
     {
       "kind": "Import",
       "name": "FlutterMacOS",
       "printedName": "FlutterMacOS",
       "declKind": "Import",
-      "moduleName": "okmusic"
+      "moduleName": "jimmusic"
     },
     {
       "kind": "TypeDecl",
@@ -34,9 +34,9 @@
             }
           ],
           "declKind": "Func",
-          "usr": "c:@M@okmusic@objc(cs)MainFlutterWindow(im)awakeFromNib",
-          "mangledName": "$s7okmusic17MainFlutterWindowC12awakeFromNibyyF",
-          "moduleName": "okmusic",
+          "usr": "c:@M@jimmusic@objc(cs)MainFlutterWindow(im)awakeFromNib",
+          "mangledName": "$s7jimmusic17MainFlutterWindowC12awakeFromNibyyF",
+          "moduleName": "jimmusic",
           "overriding": true,
           "isOpen": true,
           "objc_name": "awakeFromNib",
@@ -55,8 +55,8 @@
             {
               "kind": "TypeNominal",
               "name": "MainFlutterWindow",
-              "printedName": "okmusic.MainFlutterWindow",
-              "usr": "c:@M@okmusic@objc(cs)MainFlutterWindow"
+              "printedName": "jimmusic.MainFlutterWindow",
+              "usr": "c:@M@jimmusic@objc(cs)MainFlutterWindow"
             },
             {
               "kind": "TypeNominal",
@@ -84,9 +84,9 @@
             }
           ],
           "declKind": "Constructor",
-          "usr": "c:@M@okmusic@objc(cs)MainFlutterWindow(im)initWithContentRect:styleMask:backing:defer:",
-          "mangledName": "$s7okmusic17MainFlutterWindowC11contentRect9styleMask7backing5deferACSo6CGRectV_So013NSWindowStyleH0VSo18NSBackingStoreTypeVSbtcfc",
-          "moduleName": "okmusic",
+          "usr": "c:@M@jimmusic@objc(cs)MainFlutterWindow(im)initWithContentRect:styleMask:backing:defer:",
+          "mangledName": "$s7jimmusic17MainFlutterWindowC11contentRect9styleMask7backing5deferACSo6CGRectV_So013NSWindowStyleH0VSo18NSBackingStoreTypeVSbtcfc",
+          "moduleName": "jimmusic",
           "overriding": true,
           "implicit": true,
           "objc_name": "initWithContentRect:styleMask:backing:defer:",
@@ -100,9 +100,9 @@
         }
       ],
       "declKind": "Class",
-      "usr": "c:@M@okmusic@objc(cs)MainFlutterWindow",
-      "mangledName": "$s7okmusic17MainFlutterWindowC",
-      "moduleName": "okmusic",
+      "usr": "c:@M@jimmusic@objc(cs)MainFlutterWindow",
+      "mangledName": "$s7jimmusic17MainFlutterWindowC",
+      "moduleName": "jimmusic",
       "isOpen": true,
       "declAttributes": [
         "Custom",
@@ -172,14 +172,14 @@
       "name": "Cocoa",
       "printedName": "Cocoa",
       "declKind": "Import",
-      "moduleName": "okmusic"
+      "moduleName": "jimmusic"
     },
     {
       "kind": "Import",
       "name": "FlutterMacOS",
       "printedName": "FlutterMacOS",
       "declKind": "Import",
-      "moduleName": "okmusic"
+      "moduleName": "jimmusic"
     },
     {
       "kind": "TypeDecl",
@@ -205,9 +205,9 @@
             }
           ],
           "declKind": "Func",
-          "usr": "c:@M@okmusic@objc(cs)AppDelegate(im)applicationShouldTerminateAfterLastWindowClosed:",
-          "mangledName": "$s7okmusic11AppDelegateC47applicationShouldTerminateAfterLastWindowClosedySbSo13NSApplicationCF",
-          "moduleName": "okmusic",
+          "usr": "c:@M@jimmusic@objc(cs)AppDelegate(im)applicationShouldTerminateAfterLastWindowClosed:",
+          "mangledName": "$s7jimmusic11AppDelegateC47applicationShouldTerminateAfterLastWindowClosedySbSo13NSApplicationCF",
+          "moduleName": "jimmusic",
           "overriding": true,
           "isOpen": true,
           "objc_name": "applicationShouldTerminateAfterLastWindowClosed:",
@@ -226,14 +226,14 @@
             {
               "kind": "TypeNominal",
               "name": "AppDelegate",
-              "printedName": "okmusic.AppDelegate",
-              "usr": "c:@M@okmusic@objc(cs)AppDelegate"
+              "printedName": "jimmusic.AppDelegate",
+              "usr": "c:@M@jimmusic@objc(cs)AppDelegate"
             }
           ],
           "declKind": "Constructor",
-          "usr": "c:@M@okmusic@objc(cs)AppDelegate(im)init",
-          "mangledName": "$s7okmusic11AppDelegateCACycfc",
-          "moduleName": "okmusic",
+          "usr": "c:@M@jimmusic@objc(cs)AppDelegate(im)init",
+          "mangledName": "$s7jimmusic11AppDelegateCACycfc",
+          "moduleName": "jimmusic",
           "overriding": true,
           "implicit": true,
           "objc_name": "init",
@@ -246,9 +246,9 @@
         }
       ],
       "declKind": "Class",
-      "usr": "c:@M@okmusic@objc(cs)AppDelegate",
-      "mangledName": "$s7okmusic11AppDelegateC",
-      "moduleName": "okmusic",
+      "usr": "c:@M@jimmusic@objc(cs)AppDelegate",
+      "mangledName": "$s7jimmusic11AppDelegateC",
+      "moduleName": "jimmusic",
       "isOpen": true,
       "declAttributes": [
         "NSApplicationMain",
@@ -317,7 +317,7 @@
       "name": "FlutterMacOS",
       "printedName": "FlutterMacOS",
       "declKind": "Import",
-      "moduleName": "okmusic",
+      "moduleName": "jimmusic",
       "declAttributes": [
         "RawDocComment"
       ]
@@ -327,7 +327,7 @@
       "name": "Foundation",
       "printedName": "Foundation",
       "declKind": "Import",
-      "moduleName": "okmusic"
+      "moduleName": "jimmusic"
     },
     {
       "kind": "Function",
@@ -347,9 +347,9 @@
         }
       ],
       "declKind": "Func",
-      "usr": "s:7okmusic24RegisterGeneratedPlugins8registryySo21FlutterPluginRegistry_p_tF",
-      "mangledName": "$s7okmusic24RegisterGeneratedPlugins8registryySo21FlutterPluginRegistry_p_tF",
-      "moduleName": "okmusic",
+      "usr": "s:7jimmusic24RegisterGeneratedPlugins8registryySo21FlutterPluginRegistry_p_tF",
+      "mangledName": "$s7jimmusic24RegisterGeneratedPlugins8registryySo21FlutterPluginRegistry_p_tF",
+      "moduleName": "jimmusic",
       "funcSelfKind": "NonMutating"
     }
   ],

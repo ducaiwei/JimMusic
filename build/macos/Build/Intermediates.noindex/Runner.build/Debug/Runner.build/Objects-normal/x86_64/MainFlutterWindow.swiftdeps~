@@ -2,9 +2,9 @@
 provides-top-level:
 - "MainFlutterWindow"
 provides-nominal:
-- "7okmusic17MainFlutterWindowC"
+- "7jimmusic17MainFlutterWindowC"
 provides-member:
-- ["7okmusic17MainFlutterWindowC", ""]
+- ["7jimmusic17MainFlutterWindowC", ""]
 provides-dynamic-lookup:
 - "awakeFromNib"
 depends-top-level:
@@ -68,15 +68,15 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "setFrame"]
 - ["s25LosslessStringConvertibleP", ""]
-- !private ["7okmusic17MainFlutterWindowC", "FlutterViewController"]
-- !private ["7okmusic17MainFlutterWindowC", "RegisterGeneratedPlugins"]
-- ["7okmusic17MainFlutterWindowC", ""]
-- ["7okmusic17MainFlutterWindowC", "awakeFromNib"]
-- !private ["7okmusic17MainFlutterWindowC", "contentViewController"]
-- ["7okmusic17MainFlutterWindowC", "deinit"]
-- !private ["7okmusic17MainFlutterWindowC", "frame"]
-- ["7okmusic17MainFlutterWindowC", "init"]
-- !private ["7okmusic17MainFlutterWindowC", "setFrame"]
+- !private ["7jimmusic17MainFlutterWindowC", "FlutterViewController"]
+- !private ["7jimmusic17MainFlutterWindowC", "RegisterGeneratedPlugins"]
+- ["7jimmusic17MainFlutterWindowC", ""]
+- ["7jimmusic17MainFlutterWindowC", "awakeFromNib"]
+- !private ["7jimmusic17MainFlutterWindowC", "contentViewController"]
+- ["7jimmusic17MainFlutterWindowC", "deinit"]
+- !private ["7jimmusic17MainFlutterWindowC", "frame"]
+- ["7jimmusic17MainFlutterWindowC", "init"]
+- !private ["7jimmusic17MainFlutterWindowC", "setFrame"]
 - !private ["So22NSAccessibilityElementP", "FlutterViewController"]
 - !private ["So22NSAccessibilityElementP", "RegisterGeneratedPlugins"]
 - ["So22NSAccessibilityElementP", ""]
@@ -268,7 +268,7 @@ depends-nominal:
 - !private "So21FlutterViewControllerC"
 - "SH"
 - "s25LosslessStringConvertibleP"
-- "7okmusic17MainFlutterWindowC"
+- "7jimmusic17MainFlutterWindowC"
 - "So22NSAccessibilityElementP"
 - "So15NSAccessibilityP"
 - "So29NSAnimatablePropertyContainerP"
@@ -320,21 +320,21 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CloudKit.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
-- "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterPluginMacOS.h"
-- "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterPluginRegistrarMacOS.h"
-- "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterMacOS.h"
-- "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterEngine.h"
-- "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterTexture.h"
-- "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterAppDelegate.h"
-- "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterBinaryMessenger.h"
-- "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterViewController.h"
-- "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterCodecs.h"
-- "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterChannels.h"
-- "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterMacros.h"
-- "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterPlatformViews.h"
-- "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterDartProject.h"
+- "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterPluginMacOS.h"
+- "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterPluginRegistrarMacOS.h"
+- "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterMacOS.h"
+- "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterEngine.h"
+- "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterTexture.h"
+- "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterAppDelegate.h"
+- "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterBinaryMessenger.h"
+- "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterViewController.h"
+- "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterCodecs.h"
+- "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterChannels.h"
+- "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterMacros.h"
+- "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterPlatformViews.h"
+- "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Headers/FlutterDartProject.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/mach-o/dyld.modulemap"
-- "/Users/nelson/Documents/dcw/flutter-project/okmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Modules/module.modulemap"
+- "/Users/nelson/Documents/dcw/flutter-project/jimmusic/build/macos/Build/Products/Debug/FlutterMacOS.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/xpc/XPC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/objc/ObjectiveC.apinotes"

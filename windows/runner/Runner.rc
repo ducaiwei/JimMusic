@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "okmusic" "\0"
+            VALUE "FileDescription", "jimmusic" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "okmusic" "\0"
+            VALUE "InternalName", "jimmusic" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "okmusic.exe" "\0"
-            VALUE "ProductName", "okmusic" "\0"
+            VALUE "OriginalFilename", "jimmusic.exe" "\0"
+            VALUE "ProductName", "jimmusic" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
