@@ -1,8 +1,14 @@
 
-class MusicResponse<T> {
+import 'package:jimmusic/model/musicModel.dart';
+
+part 'musicResponseSerializable.dart';
+
+class MusicResponse {
   bool? hasTaste;
   int? code;
   int? category;
-  List<T>? result;
+  List<MusicModel>? result;
   MusicResponse(this.hasTaste, this.code, this.category, this.result);
+
+  factory MusicResponse.fromJson(Map<String, dynamic> json) => _MusicResponseFromJson(json);
 }

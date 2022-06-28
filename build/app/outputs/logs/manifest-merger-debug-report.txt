@@ -38,7 +38,7 @@ INJECTED from /Users/nelson/Documents/dcw/flutter-project/JimMusic/android/app/s
 INJECTED from /Users/nelson/Documents/dcw/flutter-project/JimMusic/android/app/src/debug/AndroidManifest.xml:1:1-8:12
 INJECTED from /Users/nelson/Documents/dcw/flutter-project/JimMusic/android/app/src/debug/AndroidManifest.xml:1:1-8:12
 	package
-		ADDED from /Users/nelson/Documents/dcw/flutter-project/JimMusic/android/app/src/main/AndroidManifest.xml:2:5-34
+		ADDED from /Users/nelson/Documents/dcw/flutter-project/JimMusic/android/app/src/main/AndroidManifest.xml:2:5-35
 		INJECTED from /Users/nelson/Documents/dcw/flutter-project/JimMusic/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/nelson/Documents/dcw/flutter-project/JimMusic/android/app/src/debug/AndroidManifest.xml
 	android:versionName

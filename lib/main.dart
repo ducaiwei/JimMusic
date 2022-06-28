@@ -5,6 +5,7 @@ import './pages/homePage.dart';
 
 
 void main() {
+  // WidgetsFlutterBinding 绑定widget和flutter引擎的桥梁
   runApp(const MyApp());
 }
 
@@ -35,8 +36,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  void _incrementCounter() {
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: new SearchAppBar(),
       backgroundColor: Colors.black,
       bottomNavigationBar: new BottomNavigator(),
-      body: new HomePage(),
+      body: new HomePage()
     );
   }
 }

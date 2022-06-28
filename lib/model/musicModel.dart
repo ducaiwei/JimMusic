@@ -1,3 +1,5 @@
+part 'musicModelSerializable.dart';
+
 class MusicModel {
   int id;
   int type;
@@ -12,4 +14,5 @@ class MusicModel {
   String alg;
   MusicModel(this.id, this.type, this.name, this.copywriter, this.picUrl, this.canDislike,
       this.trackNumberUpdateTime, this.playCount, this.trackCount, this.highQuality, this.alg);
+  factory MusicModel.fromJson(dynamic json) => _MusicModelFromJson(json);
 }
