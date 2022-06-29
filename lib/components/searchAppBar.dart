@@ -15,8 +15,8 @@ class SearchAppBar extends StatefulWidget implements PreferredSizeWidget {
 class SearchAppBarState extends State<SearchAppBar> {
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: double.infinity,
+    return PreferredSize(
+      preferredSize: Size.fromHeight(MediaQuery.of(context).size.height * 0.07),
       child: AppBar(
         backgroundColor: Colors.black,
         title: Text('吉姆音乐'),
