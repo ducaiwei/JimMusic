@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jimmusic/model/musicModel.dart';
 import '../api/http.dart';
-import '../styles/musicUI.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -17,53 +17,42 @@ class HomePageState extends State<HomePage> {
     var recommendList = data.result ?? [];
     setState(() {
       this.recommendList = recommendList;
+      print('==================$recommendList');
       this.pageData = data;
     });
   }
   HomePageState() {
     initData();
   }
-  List<Widget> _listView() {
-    return this.recommendList.map((music) => Container(
-      child: Column(
-        children: [
-          Flex(
-            direction: Axis.horizontal,
-            children: [
-              Expanded(
-                flex: 1,
-                child:  Container(
-                  height: 165.0,
-                  decoration: BoxDecoration(
-                    color: Colors.grey,
-                    borderRadius: BorderRadius.circular(10.0),
-                    image: DecorationImage(
-                      image: NetworkImage(music.picUrl),
-                      fit: BoxFit.cover,
-                      repeat: ImageRepeat.noRepeat,
-                    )
-                  ),
-                ),
-              )
-            ],
-          ),
-
-          // Image.network(music.picUrl),
-        ],
+  Widget _listView(BuildContext context, int index) {
+    return Container(
+      decoration: BoxDecoration(
+          color: Colors.transparent,
+          borderRadius: BorderRadius.all(
+              Radius.circular(15))
       ),
-    )).toList();
+      child: ClipRRect(
+        borderRadius: BorderRadius.all(
+            Radius.circular(15)),
+        child: Image.network(this.recommendList[index].picUrl),
+      ),
+    );
   }
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(left: 10.0, right: 10.0),
-      child: GridView.count(
-        mainAxisSpacing: 10.0,
-        crossAxisSpacing: 10.0,
+      child: StaggeredGridView.countBuilder(
         crossAxisCount: 2,
-        children: _listView(),
+        crossAxisSpacing: 10,
+        mainAxisSpacing: 12,
+        // scrollDirection: Axis.vertical,
+        // children: _listView(),
+        itemBuilder: (BuildContext context, int index) => _listView(context, index),
+        staggeredTileBuilder: (int index) {
+          return StaggeredTile.count(1, 1); // 固定纵轴和主轴上的数量
+        },
       ),
     );
   }
-
 }

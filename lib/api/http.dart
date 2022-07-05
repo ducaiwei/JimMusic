@@ -16,7 +16,7 @@ class MusicHttp {
     }
     /// 推荐歌单
     static getPersonalized()  async {
-        const String path = url + 'personalized';
+        const String path = url + 'personalized?limit=10';
         var request = await httpClient.getUrl(Uri.parse(path));
         var response = await request.close();
         var res = await parseReponse(response);
