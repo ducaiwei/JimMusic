@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 abstract class MusicUI {
   static Color colorF5F6FA = Color(0xfff5f6fa);
   static Color color333 = Color(0xff333333);
+  static Color colorGreen = Color(0xff676745);
 
   static paddingOnly(EdgeInsets insets) {
     return Padding(padding: insets);
