@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../api/http.dart';
-import '../components/musicListDesc.dart';
+import '../components/songListDesc.dart';
 import '../styles/musicUI.dart';
 
 class SongList extends StatefulWidget {
@@ -26,12 +26,12 @@ class SongListState extends State<SongList> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('歌单'),
+        title: const Text('歌单'),
         backgroundColor: MusicUI.colorGreen,
       ),
       body: Column(
         children: [
-          MusicListDesc(),
+          SongListDesc(),
         ],
       ),
     );

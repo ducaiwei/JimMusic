@@ -2,7 +2,7 @@ import 'dart:io';
 import 'dart:convert';
 import '../model/musicModel.dart';
 import '../model/musicResponse.dart';
-import '../model/musicListDetail.dart';
+import '../model/songListDetail.dart';
 
 class MusicHttp {
     static const String url = 'http://192.168.2.214:3000/';
