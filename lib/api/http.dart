@@ -5,7 +5,7 @@ import '../model/musicResponse.dart';
 import '../model/songListDetail.dart';
 
 class MusicHttp {
-    static const String url = 'http://192.168.2.214:3000/';
+    static const String url = 'http://192.168.10.53:3000/';
     static var httpClient = new HttpClient();
     // Duration idleTimeout = const Duration(seconds: 50);
     static parseReponse(response) async {

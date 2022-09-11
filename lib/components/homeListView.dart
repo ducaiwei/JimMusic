@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jimmusic/model/musicModel.dart';
 import '../api/http.dart';
-import '../pages/songList.dart';
+import '../pages/songListDetail.dart';
 
 class HomeListView extends StatefulWidget{
   const HomeListView({Key? key}): super(key: key);
@@ -51,7 +51,7 @@ class HomeListViewState extends State<HomeListView> {
               child: GestureDetector(
                 onTap: (){
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (_) => SongList(songId: item.id)));
+                      .push(MaterialPageRoute(builder: (_) => SongListDetail(songId: item.id)));
                 },
                 child: Stack(
                   children: [
