@@ -1,11 +1,10 @@
-class MusicListDetailModel {
+part 'songListDetailSerializable.dart';
+
+class SongListDetailModel {
   String name;
   String description;
   String coverImgUrl;
-  String picUrl;
   int subscribedCount;
-  MusicListDetailModel(this.name, this.description, this.coverImgUrl, this.picUrl, this.subscribedCount);
-  // MusicListDetailModel.fromJson(Map<String, dynamic> json) {
-  //
-  // }
+  SongListDetailModel(this.name, this.description, this.coverImgUrl, this.subscribedCount);
+  factory SongListDetailModel.fromJson(Map<String, dynamic> json) => _SongListDetailModelFromJson(json);
 }

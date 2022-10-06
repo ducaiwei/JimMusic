@@ -12,12 +12,6 @@ class SongListSate extends State<SongList> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        child: const Text(
-          'list',
-          style: TextStyle(
-            color: Colors.white
-          ),
-        ),
       );
   }
   

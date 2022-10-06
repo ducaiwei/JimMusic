@@ -5,7 +5,7 @@ import '../model/musicResponse.dart';
 import '../model/songListDetail.dart';
 
 class MusicHttp {
-    static const String url = 'http://192.168.10.53:3000/';
+    static const String url = 'http://192.168.3.42:8888/';
     static var httpClient = new HttpClient();
     // Duration idleTimeout = const Duration(seconds: 50);
     static parseReponse(response) async {
@@ -33,22 +33,13 @@ class MusicHttp {
         var result = MusicResponse.fromJson(res);
         return result;
     }
-    /// 获取歌单歌曲列表
-    static getMusicList(int id, int limit, int offset) async {
-        String path = url + '/playlist/track/all?id=' + id.toString() + '&limit=' + limit.toString() + '&offset=' + offset.toString();
-        var request = await httpClient.getUrl(Uri.parse(path));
-        var response = await request.close();
-        var res = await parseReponse(response);
-        print('============$res');
-    }
     /// 获取歌单详情
-    static getMusicListDetail(int id) async {
-        String path = url + 'playlist/detail?id=' + id.toString();
+    static Future<SongListDetailModel> getMusicListDetail(int id) async {
+        String path = url + 'songlist/detail?id=' + id.toString();
         var request = await httpClient.getUrl(Uri.parse(path));
         var response = await request.close();
         var res = await parseReponse(response);
-        print('歌单详情============$res');
-
+        return SongListDetailModel.fromJson(res['playlist']);
     }
 }
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../api/http.dart';
 import '../components/songListDetailDesc.dart';
 import '../styles/musicUI.dart';
 import '../components/songList.dart';
+import '../model/songListDetail.dart';
 
 class SongListDetail extends StatefulWidget {
   int songId;
@@ -16,11 +16,10 @@ class SongListDetail extends StatefulWidget {
 class SongListDetailState extends State<SongListDetail> {
   int songId;
   SongListDetailState({required this.songId});
+
   @override
   void initState() {
     super.initState();
-    MusicHttp.getMusicListDetail(this.songId);
-    MusicHttp.getMusicList(this.songId, 10, 0);
   }
   @override
   Widget build(BuildContext context) {
@@ -32,7 +31,7 @@ class SongListDetailState extends State<SongListDetail> {
       ),
       body: Column(
         children: [
-            SongListDesc(),
+            SongListDesc(songId: songId),
             SongList(),
         ],
       ),
