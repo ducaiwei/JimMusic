@@ -1,0 +1,53 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "Cocoa",
+      "printedName": "Cocoa",
+      "declKind": "Import",
+      "moduleName": "jimmusic"
+    },
+    {
+      "kind": "Import",
+      "name": "FlutterMacOS",
+      "printedName": "FlutterMacOS",
+      "declKind": "Import",
+      "moduleName": "jimmusic"
+    },
+    {
+      "kind": "Import",
+      "name": "Cocoa",
+      "printedName": "Cocoa",
+      "declKind": "Import",
+      "moduleName": "jimmusic"
+    },
+    {
+      "kind": "Import",
+      "name": "FlutterMacOS",
+      "printedName": "FlutterMacOS",
+      "declKind": "Import",
+      "moduleName": "jimmusic"
+    },
+    {
+      "kind": "Import",
+      "name": "FlutterMacOS",
+      "printedName": "FlutterMacOS",
+      "declKind": "Import",
+      "moduleName": "jimmusic",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "jimmusic"
+    }
+  ],
+  "json_format_version": 6
+}

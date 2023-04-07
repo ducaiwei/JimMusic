@@ -12,6 +12,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$USER_HOME$/development/flutter/.pub-cache/hosted/pub.flutter-io.cn/path_provider_android-2.0.22/android" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -1,12 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:provider/provider.dart';
 import './components/bottomNavigator.dart';
 import './components/searchAppBar.dart';
-import './pages/homePage.dart';
+import 'pages/mobile/homePage.dart';
+import './providers/homeHeadProvider.dart';
+import 'pages/mobile/profilePage.dart';
+
 
 
 void main() {
+  // debugPaintSizeEnabled 设置为true可以开启绘制边界线
+  // debugPaintSizeEnabled = true;
   // WidgetsFlutterBinding 绑定widget和flutter引擎的桥梁
-  runApp(const MyApp());
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider(create: (_) => HomeHeadProvider())
+    ],
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -15,7 +27,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'jim music',
+      title: '',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -36,14 +48,24 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
+  int _selectIndex = 0;
+  final List<Widget> widgets = [
+    HomePage(),
+    ProfilePage(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: new SearchAppBar(),
+      appBar: SearchAppBar(),
       backgroundColor: Colors.black,
-      bottomNavigationBar: new BottomNavigator(),
-      body: new HomePage()
+      bottomNavigationBar: BottomNavigator(
+          tapFunction: (index) {
+            setState(() {
+              _selectIndex = index;
+            });
+          }
+      ),
+      body: widgets[_selectIndex],
     );
   }
 }

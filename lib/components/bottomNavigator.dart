@@ -1,25 +1,36 @@
 import 'package:flutter/material.dart';
+import 'package:jimmusic/styles/musicUI.dart';
 import 'dart:math';
 
 
-/**
- * 底部导航菜单
- */
+/// 底部导航菜单
 class BottomNavigator extends StatefulWidget {
+  final Function tapFunction;
+  const BottomNavigator({
+    super.key,
+    required this.tapFunction
+  });
   @override
   State<StatefulWidget> createState() => BottomNavigatorState();
   
 }
 class BottomNavigatorState extends State<BottomNavigator> {
   late final double _maxSizeBottomNavigationBar = MediaQuery.of(context).padding.bottom + kBottomNavigationBarHeight;
-
+  int _currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: max(0, _maxSizeBottomNavigationBar),
       child:  SingleChildScrollView(
         child: BottomNavigationBar(
-          selectedItemColor: Colors.white,
+          currentIndex: _currentIndex,
+          onTap: (index){
+            setState(() {
+              _currentIndex = index;
+            });
+            widget.tapFunction(index);
+          },
+          selectedItemColor: MusicUI.colorDeepRed,
           backgroundColor: Colors.grey[900],
           unselectedItemColor: Colors.grey[600],
           items: const [

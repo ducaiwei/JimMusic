@@ -36,8 +36,17 @@ dependencies:
   cupertino_icons: ^1.0.2
   responsive_framework: ^0.2.0
   json_annotation: ^4.6.0
-  provider: ^6.0.0
+  provider: ^6.0.4
   transparent_image: ^2.0.0
+  auto_animated: ^3.1.0
+  netease_music_api:
+    #    path: ../../NeteaseCloudMusicApi
+    git:
+      url: https://github.com/boyan01/NeteaseCloudMusicApi.git
+      ref: 47684bc8b75bf37ad3201993a9e3db0b5fe64ec3
+  cookie_jar: ^3.0.1
+  async: ^2.9.0
+  path_provider: ^2.0.12
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -48,8 +57,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
-  json_serializable: ^6.3.1
   build_runner: ^2.2.0
+  json_serializable: ^6.4.5
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

@@ -1,21 +1,10 @@
-part 'musicModelSerializable.dart';
 
-/**
- * 歌单详情
- */
+/// 歌曲model
 class MusicModel {
-  int id;
-  int type;
   String name;
-  // String copywriter;
   String picUrl;
-  bool canDislike;
-  int trackNumberUpdateTime;
-  int playCount; /// 播放次数
-  int trackCount;
-  bool highQuality;
-  String alg;
-  MusicModel(this.id, this.type, this.name, this.picUrl, this.canDislike,
-      this.trackNumberUpdateTime, this.playCount, this.trackCount, this.highQuality, this.alg);
-  factory MusicModel.fromJson(dynamic json) => _MusicModelFromJson(json);
+  String authorName;
+  int dt; /// 播放时长
+  String alName; /// 专辑名称
+  MusicModel(this.name, this.picUrl, this.authorName, this.dt, this.alName);
 }
